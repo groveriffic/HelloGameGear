@@ -1,2 +1,4 @@
+*.gg
 *.o
+*.sym
 linkfile
