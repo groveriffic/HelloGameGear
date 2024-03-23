@@ -12,7 +12,7 @@ IDE (used to integrate command line tools above, an emulator to test and Git):
 * Qt Creator on OS X, http://www.qt.io/ide/
 
 Tested on emulators
-* Kega Fusion Emulator (OS X), http://www.carpeludum.com/kega-fusion/
+* [Emulicious](https://emulicious.net/)
 * Osmose via RetroPie on Raspberry Pi, http://blog.petrockblock.com/retropie/
 
 Tested on real hardware
