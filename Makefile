@@ -14,7 +14,7 @@ all: $(OFILES) $(IFILES) makefile
 	$(LD) $(LDFLAGS) linkfile $(OUT)
 
 %.o: %.asm
-	$(CC) $(CFLAGS) $< $@
+	$(CC) $(CFLAGS) $@ $<
 
 clean:
 	rm -f $(OFILES) core *~ *.sym linkfile $(OUT)
