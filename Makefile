@@ -6,7 +6,7 @@ LDFLAGS = -v -d -s
 SFILES = HelloGameGear.asm
 IFILES = FontData.inc
 OFILES = HelloGameGear.o
-OUT = HelloWorld.gg
+OUT = HelloGameGear.gg
 
 all: $(OFILES) $(IFILES) makefile
 	echo [objects] > linkfile
