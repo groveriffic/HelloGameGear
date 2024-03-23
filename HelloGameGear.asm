@@ -137,10 +137,56 @@ loadFontTiles:
 
 ; writeText
 
-; Text Message ("Hello, World!")
+; Text Message
 Message:
-;   H   e   l   l   o   ,       W   o   r   l   d   !
-.dw $28,$45,$4c,$4c,$4f,$0c,$00,$37,$4f,$52,$4c,$44,$01
+;   H   e   l   l   o   
+.dw $28,$45,$4c,$4c,$4f
+.dw $0c ; comma
+.dw $00 ; space
+;   G   a   m   e
+.dw $27,$41,$4d,$45
+;   G   e   a   r
+.dw $27,$45,$41,$52
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $23,$48,$41,$44 ; Chad
+.dw $00 ; space
+.dw $43,$41,$4e ; can
+.dw $00 ; space
+.dw $57,$52,$49,$54,$45 ; write
+.dw $00 ; space
+.dw $2e,$25,$33 ; NES
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $00 ; space
+.dw $29,$00,$43,$41,$4e,$00,$57,$52,$49,$54,$45,$00,$27,$27 ; i can write gg
+.dw $01 ; !
 MessageEnd:
 
 writeText:
