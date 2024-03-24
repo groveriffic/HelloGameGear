@@ -146,38 +146,13 @@ MAP $20 TO $7E = $00
 ; Text Message
 Message:
 .ASC "H e l l o ,   G a m e G e a r "
+.REPEAT 17
 .dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
+.ENDR
 .ASC "C h a d   c a n   w r i t e   N E S "
+.REPEAT 14
 .dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
-.dw $00 ; space
+.ENDR
 .ASC "I   c a n   w r i t e   G G ! "
 MessageEnd:
 
