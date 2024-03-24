@@ -135,18 +135,17 @@ loadFontTiles:
     call writeToVram
     ret
 
+; Tile locations are words with all the font data in the first byte worth of address space
+; So we can use .ASCIITABLE as long as we add a null byte after each character.
+.ASCIITABLE
+MAP $20 TO $7E = $00
+.ENDA
+
 ; writeText
 
 ; Text Message
 Message:
-;   H   e   l   l   o   
-.dw $28,$45,$4c,$4c,$4f
-.dw $0c ; comma
-.dw $00 ; space
-;   G   a   m   e
-.dw $27,$41,$4d,$45
-;   G   e   a   r
-.dw $27,$45,$41,$52
+.ASC "H e l l o ,   G a m e G e a r "
 .dw $00 ; space
 .dw $00 ; space
 .dw $00 ; space
@@ -164,13 +163,7 @@ Message:
 .dw $00 ; space
 .dw $00 ; space
 .dw $00 ; space
-.dw $23,$48,$41,$44 ; Chad
-.dw $00 ; space
-.dw $43,$41,$4e ; can
-.dw $00 ; space
-.dw $57,$52,$49,$54,$45 ; write
-.dw $00 ; space
-.dw $2e,$25,$33 ; NES
+.ASC "C h a d   c a n   w r i t e   N E S "
 .dw $00 ; space
 .dw $00 ; space
 .dw $00 ; space
@@ -185,8 +178,7 @@ Message:
 .dw $00 ; space
 .dw $00 ; space
 .dw $00 ; space
-.dw $29,$00,$43,$41,$4e,$00,$57,$52,$49,$54,$45,$00,$27,$27 ; i can write gg
-.dw $01 ; !
+.ASC "I   c a n   w r i t e   G G ! "
 MessageEnd:
 
 writeText:
